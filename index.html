@@ -220,7 +220,9 @@ h3{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.6vw,32px);lin
 .ledger td:first-child{text-align:left;white-space:normal;padding-right:20px}
 .ledger td:first-child small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
 .ledger td.tot{color:var(--gold-hi)}
-.ledger td.na{font-size:16px;color:var(--mute);font-family:var(--sans)}
+.ledger td.opt{color:var(--ivory)}
+.ledger .per{font-family:var(--sans);font-size:12px;letter-spacing:.18em;color:var(--mute);margin-left:8px}
+.ledger .fine{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.08em;color:var(--mute);margin-top:6px}
 .ledger td .lbl{display:none}
 .cond{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:90px}
 .cond div{background:#0c0c0d;padding:34px 28px}
@@ -318,6 +320,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   .ledger tr{display:block;border-bottom:1px solid var(--line);padding:22px 0}
   .ledger td{display:flex;justify-content:space-between;border:0;padding:4px 0;font-size:20px}
   .ledger td:first-child{display:block;font-size:22px;margin-bottom:8px}
+  .ledger td .val{text-align:right}
   .ledger td .lbl{display:inline;font-family:var(--sans);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);align-self:center}
   .inc li{grid-template-columns:40px 1fr}
 }
@@ -628,11 +631,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <p class="muted rv d2" style="margin-top:22px;max-width:620px">La creación del perfil se paga una sola vez y, a partir de ahí, se abona una cuota mensual fija. La publicidad es opcional y se paga aparte a Meta.</p>
 
     <table class="ledger rv">
-      <thead><tr><th>Concepto</th><th>Base imponible</th><th>IVA 21 %</th><th>Total</th></tr></thead>
+      <thead><tr><th>Concepto</th><th>Total · IVA incluido</th></tr></thead>
       <tbody>
-        <tr><td><small>Parte 1 · Único</small>Creación del perfil</td><td><span class="lbl">Base</span>340,00 €</td><td><span class="lbl">IVA 21 %</span>71,40 €</td><td class="tot"><span class="lbl">Total</span>411,40 €</td></tr>
-        <tr><td><small>Parte 2 · Mensual</small>Mantenimiento</td><td><span class="lbl">Base</span>380,00 €</td><td><span class="lbl">IVA 21 %</span>79,80 €</td><td class="tot"><span class="lbl">Total</span>459,80 €</td></tr>
-        <tr><td><small>Mensual · Opcional</small>Publicidad en Instagram</td><td><span class="lbl">Base</span>60–90 €</td><td class="na"><span class="lbl">IVA 21 %</span>Facturado por Meta</td><td class="na"><span class="lbl">Total</span>—</td></tr>
+        <tr><td><small>Parte 1 · Pago único</small>Creación del perfil</td><td class="tot"><span class="lbl">Total · IVA incl.</span><span class="val">411,40 €</span></td></tr>
+        <tr><td><small>Parte 2 · Mensual</small>Mantenimiento</td><td class="tot"><span class="lbl">Total · IVA incl.</span><span class="val">459,80 €<span class="per">/mes</span></span></td></tr>
+        <tr><td><small>Mensual · Opcional</small>Publicidad en Instagram</td><td class="opt"><span class="lbl">Presupuesto</span><span class="val">60–90 €<span class="per">/mes</span><span class="fine">Se paga directamente a Meta</span></span></td></tr>
       </tbody>
     </table>
 
