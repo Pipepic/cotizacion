@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Propuesta Instagram · MGD &amp; DUKE</title>
-<meta name="description" content="Cotización n.º 2026-012 · Gestión de Instagram para el vendedor independiente MGD &amp; DUKE.">
+<title>Propuesta para Margarita · MGD &amp; DUKE</title>
+<meta name="description" content="Cotización n.º 2026-012 · Gestión de Instagram para Margarita, vendedora independiente de MGD &amp; DUKE.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -109,6 +109,17 @@ h3{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.6vw,32px);lin
 .rv{opacity:0;transform:translateY(40px);transition:opacity 1.3s var(--ease),transform 1.3s var(--ease)}
 .rv.in{opacity:1;transform:none}
 .rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}.rv.d4{transition-delay:.48s}
+
+/* ---------- greeting ---------- */
+.greeting{padding-bottom:clamp(70px,10vw,130px)}
+.letter{max-width:760px;margin:0 auto;text-align:center}
+.letter .salute{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(34px,4.6vw,58px);line-height:1.1;margin-bottom:30px}
+.letter .salute em{font-style:italic}
+.letter .body{font-family:var(--serif);font-weight:300;font-size:clamp(20px,2vw,25px);line-height:1.6;color:#d8d6d1}
+.letter .sig{margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.letter .sig::before{content:"";width:44px;height:1px;background:var(--gold);margin-bottom:14px}
+.letter .sig .name{font-family:var(--serif);font-style:italic;font-size:26px;line-height:1.2}
+.letter .sig .role{font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold)}
 
 /* ---------- meta ---------- */
 .meta{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -307,6 +318,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   .cond{grid-template-columns:1fr 1fr}
 }
 @media (max-width:620px){
+  .eyebrow::before,.eyebrow::after{display:none}
   .wa-float span{display:none}
   .wa-float{padding:14px}
   .nav-meta{display:none}
@@ -357,13 +369,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   .print-brand .doc{font-size:6pt;letter-spacing:.3em;text-transform:uppercase;color:var(--mute)}
 
   /* title */
-  .hero{display:block;min-height:0!important;padding:0!important;overflow:visible}
+  .hero{display:block;place-items:normal;min-height:0!important;padding:0!important;overflow:visible}
   .hero-content{max-width:none;padding:0;background:none;text-align:left}
   .eyebrow{font-size:6.3pt;letter-spacing:.32em;gap:6pt}
   .eyebrow::after{display:none}
   .eyebrow .ig{font-size:8pt}
   .hero h1{font-size:25pt;line-height:1.05;margin:2.5mm 0 2mm}
   .hero p.lead{font-size:9pt;color:#444;max-width:none;margin:0;letter-spacing:0}
+  .greeting{margin-top:4.5mm}
+  .letter{max-width:none;text-align:left;padding-left:4mm;border-left:1pt solid var(--line-g)}
+  .letter .salute{font-size:13pt;margin-bottom:1mm}
+  .letter .body{font-size:9.6pt;line-height:1.45;color:#333}
+  .letter .sig{margin-top:1.2mm;flex-direction:row;align-items:baseline;gap:6pt}
+  .letter .sig::before{display:none}
+  .letter .sig .name{font-size:10.5pt}
+  .letter .sig .role{font-size:5.8pt;letter-spacing:.3em}
 
   /* quote data */
   .meta{display:grid;grid-template-columns:.8fr 1.05fr .6fr 1.2fr 1.45fr;margin-top:5mm;border-top:.6pt solid var(--line);border-bottom:.6pt solid var(--line)}
@@ -513,11 +533,22 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     </svg>
   </div>
   <div class="hero-content" id="heroContent">
-    <div class="eyebrow fade"><svg class="ig"><use href="#ig"/></svg>Propuesta privada · Instagram</div>
+    <div class="eyebrow fade"><svg class="ig"><use href="#ig"/></svg>Propuesta privada para Margarita</div>
     <h1 class="split" data-split>El tiempo merece <em class="gold-text">ser contado</em></h1>
-    <p class="lead fade" style="transition-delay:.6s">Una presencia en Instagram a la altura de cada pieza. Plan Básico de gestión para el vendedor independiente MGD &amp; DUKE, en inglés y alemán.</p>
+    <p class="lead fade" style="transition-delay:.6s">Una presencia en Instagram a la altura de cada pieza. Plan Básico de gestión de Instagram para MGD &amp; DUKE, en inglés y alemán.</p>
   </div>
   <div class="scroll-cue fade" style="transition-delay:1s"><span>Descubrir</span><i></i></div>
+</section>
+
+<!-- GREETING -->
+<section class="greeting pad">
+  <div class="wrap">
+    <div class="letter">
+      <p class="salute rv">Estimada <em class="gold-text">Margarita</em>:</p>
+      <p class="body rv d1">Gracias por tu confianza. Cada reloj de MGD y DUKE nace en Luxemburgo con un nivel de detalle excepcional, y tu perfil de Instagram debería transmitirlo igual de bien, en inglés y en alemán. En esta propuesta encontrarás qué incluye, cuál es la inversión y cómo empezar.</p>
+      <div class="sig rv d2"><span class="name">Andrés Sarria</span><span class="role">Social media manager</span></div>
+    </div>
+  </div>
 </section>
 
 <!-- META -->
@@ -527,7 +558,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div><dt>N.º de cotización</dt><dd>2026-012</dd></div>
       <div><dt>Fecha</dt><dd>8 de noviembre de 2026</dd></div>
       <div><dt>Validez</dt><dd>30 días</dd></div>
-      <div><dt>Cliente</dt><dd>Vendedor independiente MGD &amp; DUKE</dd></div>
+      <div><dt>Cliente</dt><dd>Margarita · Vendedora independiente MGD &amp; DUKE</dd></div>
       <div><dt>Proveedor</dt><dd>Andrés Sarria (Pipe) · Social media manager</dd></div>
     </dl>
   </div>
